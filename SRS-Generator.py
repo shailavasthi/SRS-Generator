@@ -36,7 +36,7 @@ def get_list(list, sample_size):
 
     return sample_list
 
-print(get_list('Males.csv', 70))
-print(get_list('Females.csv', 70))
-print(get_list('Underclassmen.csv', 40))
-print(get_list('Upperclassmen.csv', 40))
+print(get_list('CSV/Males.csv', 70))
+print(get_list('CSV/Females.csv', 70))
+print(get_list('CSV/Underclassmen.csv', 40))
+print(get_list('CSV/Upperclassmen.csv', 40))
