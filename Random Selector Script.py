@@ -14,8 +14,13 @@ def get_list(list, sample_size):
         index = []
         i = 1
         while i <= sample_size:
-            index.append(random.randint(0, population - 1))
-            i += 1
+            randint = random.randint(0, population - 1)
+            if randint not in index:
+                index.append(randint)
+                i += 1
+            else:
+                i += 0
+
         return index
 
     # CSV file is converted to a pandas data frame, and population size is determined
